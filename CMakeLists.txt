@@ -13,5 +13,8 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(fmt)
 
-add_executable(cpp_PJC_studies w01/main.cpp)
+add_executable(cpp_PJC_studies cw01/main.cpp)
 target_link_libraries(cpp_PJC_studies fmt)
+
+add_executable(cpp_PJC_studies2 main2.cpp)
+target_link_libraries(cpp_PJC_studies2 fmt)
