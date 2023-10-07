@@ -26,6 +26,12 @@ auto main() -> int {
 	    vec.push_back(666);
 	    showVec(vec);
 
+        fmt::println("{}",*vec.begin());
+        fmt::println("{}",vec.front());
+
+        fmt::println("{}",*(vec.end()-1));
+        fmt::println("{}",vec.back());
+
 	    vec.pop_back();
 	    showVec(vec);
 
