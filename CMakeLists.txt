@@ -19,8 +19,14 @@ target_link_libraries(w01 fmt)
 add_executable(cw01 cw01/main.cpp)
 target_link_libraries(cw01 fmt)
 
-add_executable(cw01_zad1 cw01/zad1.cpp)
-target_link_libraries(cw01_zad1 fmt)
+    add_executable(cw01_zad1 cw01/zad1.cpp)
+    target_link_libraries(cw01_zad1 fmt)
 
 add_executable(cw02 cw02/main.cpp)
 target_link_libraries(cw02 fmt)
+
+    add_executable(cw02_odwracanie cw02/odwracanie.cpp)
+    target_link_libraries(cw02_odwracanie fmt)
+
+    add_executable(cw02_refactoring cw02/refactoring_before.cpp)
+    target_link_libraries(cw02_refactoring fmt)
