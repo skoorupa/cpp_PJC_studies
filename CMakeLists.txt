@@ -28,5 +28,11 @@ target_link_libraries(cw02 fmt)
     add_executable(cw02_odwracanie cw02/odwracanie.cpp)
     target_link_libraries(cw02_odwracanie fmt)
 
-    add_executable(cw02_refactoring cw02/refactoring_before.cpp)
-    target_link_libraries(cw02_refactoring fmt)
+    add_executable(cw02_refactoring_before cw02/refactoring_before.cpp)
+    target_link_libraries(cw02_refactoring_before fmt)
+
+    add_executable(cw02_refactoring_after cw02/refactoring_after.cpp)
+    target_link_libraries(cw02_refactoring_after fmt)
+
+    add_executable(cw02_cwiczenia cw02/cwiczenia.cpp)
+    target_link_libraries(cw02_cwiczenia fmt)

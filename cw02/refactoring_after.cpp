@@ -1,5 +1,6 @@
-
-
+//
+// Created by adams on 19.10.2023.
+//
 
 #include <vector>
 #include <string>
@@ -8,13 +9,14 @@
 auto example(
         std::vector<std::string> left, std::vector<std::string> right
 ) -> void {
-    std::ranges::sort(left);
-    auto duplicates = std::ranges::unique(left);
-    left.erase(duplicates.begin(), duplicates.end());
+    auto sort_and_unique = [](std::vector<std::string>& vec) {
+        std::ranges::sort(vec);
+        auto duplicates = std::ranges::unique(vec);
+        vec.erase(duplicates.begin(), duplicates.end());
+    };
 
-    std::ranges::sort(right);
-    duplicates = std::ranges::unique(right);
-    right.erase(duplicates.begin(), duplicates.end());
+    sort_and_unique(left);
+    sort_and_unique(right);
 
     if (left.size() < right.size()) {
         for (auto i = 0; i < right.size(); i++) {
