@@ -16,11 +16,15 @@ FetchContent_MakeAvailable(fmt)
 add_executable(w01 w01/main.cpp)
 target_link_libraries(w01 fmt)
 
+# cw01
+
 add_executable(cw01 cw01/main.cpp)
 target_link_libraries(cw01 fmt)
 
     add_executable(cw01_zad1 cw01/zad1.cpp)
     target_link_libraries(cw01_zad1 fmt)
+
+# cw02
 
 add_executable(cw02 cw02/main.cpp)
 target_link_libraries(cw02 fmt)
@@ -36,3 +40,8 @@ target_link_libraries(cw02 fmt)
 
     add_executable(cw02_cwiczenia cw02/cwiczenia.cpp)
     target_link_libraries(cw02_cwiczenia fmt)
+
+# cw03 core_nowealgorytmy.cpp
+
+    add_executable(cw03_core_nowealgorytmy cw03/core_nowealgorytmy.cpp)
+    target_link_libraries(cw03_core_nowealgorytmy fmt)
