@@ -17,10 +17,10 @@ namespace pjc {
             return result;
         }
 
-        typename (typedef T)
-        auto drop(auto collection, int n) {
-            auto result = std::vector<auto n>
-        }
+//        typename (typedef T)
+//        auto drop(auto collection, int n) {
+//            auto result = std::vector<auto n>
+//        }
     }
 }
 
