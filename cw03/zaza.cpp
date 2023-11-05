@@ -21,4 +21,8 @@ auto printsmth(auto cos) -> void {
 auto main() -> int {
     auto a = std::vector<int>{1,2,3};
     print(a);
+
+    int x;
+    x+=5;
+    fmt::println("{}",x);
 }

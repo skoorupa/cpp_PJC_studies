@@ -48,3 +48,8 @@ target_link_libraries(cw02 fmt)
 
     add_executable(cw03_zaza cw03/zaza.cpp)
     target_link_libraries(cw03_zaza fmt)
+
+# cw04
+
+    add_executable(cw04_cwiczenia cw04/cwiczenia.cpp)
+    target_link_libraries(cw04_cwiczenia fmt)
