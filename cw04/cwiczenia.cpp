@@ -93,4 +93,8 @@ int main() {
     };
     fmt::println("{}",Student::sortByOption(studenci1,Option::SURNAME));
     fmt::println("{}",Student::areInSameSemester(studenci1));
+
+    auto test = std::vector<int>{1,2,3,4,5};
+    test.erase(test.begin(), test.end());
+    fmt::println("{}",test);
 }
