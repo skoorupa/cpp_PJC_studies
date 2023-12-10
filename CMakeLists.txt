@@ -63,7 +63,9 @@ target_link_libraries(cw02 fmt)
 
 # cw05
 
-add_executable(cw05_cwiczenia cw05/core.cpp)
+add_executable(cw05_core cw05/core.cpp)
+target_link_libraries(cw05_core fmt)
+add_executable(cw05_cwiczenia cw05/cwiczenia.cpp)
 target_link_libraries(cw05_cwiczenia fmt)
 
 # cw05SFML
