@@ -11,13 +11,6 @@ FetchContent_Declare(
         GIT_TAG 10.1.1
 )
 
-FetchContent_Declare(
-        sfml
-        GIT_REPOSITORY https://github.com/SFML/SFML.git
-        GIT_TAG 2.6.0
-)
-
-FetchContent_MakeAvailable(sfml)
 FetchContent_MakeAvailable(fmt)
 
 add_executable(w01 w01/main.cpp)
@@ -65,22 +58,3 @@ target_link_libraries(cw02 fmt)
 
 add_executable(cw05_cwiczenia cw05/core.cpp)
 target_link_libraries(cw05_cwiczenia fmt)
-
-# cw05SFML
-
-add_executable(cw05SFML_cwiczenia cw05SFML/cwiczenia.cpp)
-target_link_libraries(
-        cw05SFML_cwiczenia
-        fmt
-        sfml-graphics
-        sfml-window
-        sfml-system
-)
-
-
-IF (WIN32)
-    add_custom_command(TARGET cw05SFML_cwiczenia POST_BUILD
-            COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:cw05SFML_cwiczenia> $<TARGET_FILE_DIR:cw05SFML_cwiczenia>
-            COMMAND_EXPAND_LISTS
-    )
-ENDIF ()
